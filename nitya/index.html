@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithyadhar Caterers | Premium Catering Services in Kundapura, Udupi</title>
+    <meta name="description" content="Best Caterers in Kundapura. Premium wedding Food, Seafoods, Corporate functions & birthday events. 24/7 service, no holidays. Udupi Catering Services.">
+    <meta name="keywords" content="Best Caterers in Kundapura, Udupi Catering Services, Wedding Catering Kundapura, Seafood Catering Karnataka, Corporate Lunch Udupi, birthday Event Catering">
+    <meta name="author" content="Nithyadhar Caterers">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#F9F1D8',
+                            200: '#F0DEAA',
+                            300: '#E6CB7D',
+                            400: '#DDB850',
+                            500: '#D4AF37',
+                            600: '#AA8C2C',
+                            700: '#806921',
+                            800: '#554616',
+                            900: '#2B230B',
+                        },
+                        luxury: {
+                            black: '#0a0a0a',
+                            dark: '#121212',
+                            light: '#f8f8f8'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-gold': 'linear-gradient(135deg, #D4AF37 0%, #F0DEAA 50%, #AA8C2C 100%)',
+                        'gradient-dark': 'linear-gradient(180deg, #0a0a0a 0%, #121212 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #F0DEAA 50%, #AA8C2C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F0DEAA 50%, #AA8C2C 100%);
+        }
+        
+        .border-gold-gradient {
+            border-image: linear-gradient(135deg, #D4AF37 0%, #F0DEAA 50%, #AA8C2C 100%) 1;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+        }
+        
+        .gold-glow {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        .owner-ring {
+            position: relative;
+        }
+        
+        .owner-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #D4AF37 0%, #F0DEAA 50%, #AA8C2C 100%);
+            z-index: -1;
+            animation: rotate 10s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1001;
+            background: rgba(0, 0, 0, 0.95);
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .nav-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-scrolled {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 998;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .service-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f8f8 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-left: 4px solid #D4AF37;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid #D4AF37;
+            color: #D4AF37;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            background: #D4AF37;
+            color: #0a0a0a;
+        }
+        
+        .section-padding {
+            padding: 100px 0;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555244162-80379f99701b?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+        
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-luxury-light text-gray-800 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-sticky py-4 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center">
+                    <i class="fas fa-utensils text-luxury-black text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-white font-serif tracking-wide">Nithyadhar</h1>
+                    <p class="text-gold-400 text-xs tracking-widest uppercase">Caterers</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="text-white hover:text-gold-400 transition-colors text-sm font-medium">Home</a>
+                <a href="#about" class="text-white hover:text-gold-400 transition-colors text-sm font-medium">About</a>
+                <a href="#services" class="text-white hover:text-gold-400 transition-colors text-sm font-medium">Services</a>
+                <a href="#gallery" class="text-white hover:text-gold-400 transition-colors text-sm font-medium">Gallery</a>
+                <a href="#testimonials" class="text-white hover:text-gold-400 transition-colors text-sm font-medium">Reviews</a>
+                <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-luxury-black font-semibold text-sm">Enquire Now</a>
+            </div>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-luxury-black/95 backdrop-blur-lg py-6 px-6">
+            <div class="flex flex-col gap-4">
+                <a href="#home" class="text-white hover:text-gold-400 transition-colors py-2 border-b border-gray-800">Home</a>
+                <a href="#about" class="text-white hover:text-gold-400 transition-colors py-2 border-b border-gray-800">About</a>
+                <a href="#services" class="text-white hover:text-gold-400 transition-colors py-2 border-b border-gray-800">Services</a>
+                <a href="#gallery" class="text-white hover:text-gold-400 transition-colors py-2 border-b border-gray-800">Gallery</a>
+                <a href="#contact" class="btn-primary px-6 py-3 rounded-full text-luxury-black font-semibold text-center mt-4">Enquire Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-luxury-black/50"></div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+            <div class="mb-6 inline-block">
+                <span class="text-gold-400 text-sm md:text-base tracking-[0.3em] uppercase font-medium border-b-2 border-gold-400 pb-2">Est. Kundapura</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight font-serif">
+                Taste the <span class="text-gradient-gold">Tradition</span><br>
+                <span class="text-4xl md:text-6xl lg:text-7xl">Experience Luxury</span>
+            </h1>
+            
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Premium catering services for weddings, corporate events, and celebrations in Kundapura, Udupi & across Karnataka
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://formspree.io/f/xeevobqj" class="btn-primary px-8 py-4 rounded-full text-luxury-black font-bold text-lg flex items-center gap-2 hover:gap-3 transition-all">
+                    <span>Enquire Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#services" class="btn-outline px-8 py-4 rounded-full font-semibold text-lg bg-transparent">
+                    View Services
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-8 md:gap-16 text-white/80">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-gold-400 font-serif">15+</div>
+                    <div class="text-xs md:text-sm mt-1">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-gold-400 font-serif">1000+</div>
+                    <div class="text-xs md:text-sm mt-1">Events Served</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-gold-400 font-serif">24/7</div>
+                    <div class="text-xs md:text-sm mt-1">Available</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white/50 hover:text-gold-400 transition-colors">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <span class="text-gold-600 font-semibold tracking-widest uppercase text-sm">About Us</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-luxury-black mt-3 mb-6 font-serif">
+                        Cooking with <span class="text-gradient-gold">Excellence</span>
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        Nithyadhar Caterers brings the authentic flavors of coastal Karnataka to your special occasions. Based in Kundapura, Udupi, we have been serving the community with dedication, hygiene, and uncompromising quality for over 15 years.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                        From traditional wedding Foods to elaborate Seafoods, our experienced chefs use only the freshest ingredients to create memorable dining experiences. We understand that every event is unique, and we customize our services to match your vision.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-luxury-black">Premium Quality</h4>
+                                <p class="text-sm text-gray-500">Fresh ingredients daily</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-luxury-black">Expert Chefs</h4>
+                                <p class="text-sm text-gray-500">15+ years experience</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-luxury-black">Hygienic</h4>
+                                <p class="text-sm text-gray-500">ISO standards followed</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-luxury-black">24/7 Service</h4>
+                                <p class="text-sm text-gray-500">No holidays, always open</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Owner Profile Card -->
+                <div class="flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="glass-card rounded-3xl p-8 max-w-md w-full text-center hover-lift relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-gold"></div>
+                        
+                        <div class="owner-ring w-40 h-40 mx-auto mb-6 rounded-full p-1">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-gray-200">
+                                <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=400&h=400&fit=crop" alt="Owner" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-luxury-black font-serif mb-1">Nithyananda Shetty</h3>
+                        <p class="text-gold-600 font-medium text-sm tracking-widest uppercase mb-4">Founder & Head Caterer</p>
+                        
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            With over 15 years of culinary expertise in coastal Karnataka cuisine, Nithyananda has built Nithyadhar Caterers on the principles of quality, hygiene, and customer satisfaction. His passion for authentic flavors drives every dish we serve.
+                        </p>
+                        
+                        <div class="flex justify-center gap-4">
+                            <div class="text-center px-4 border-r border-gray-200">
+                                <div class="text-xl font-bold text-gold-600">15+</div>
+                                <div class="text-xs text-gray-500">Years</div>
+                            </div>
+                            <div class="text-center px-4 border-r border-gray-200">
+                                <div class="text-xl font-bold text-gold-600">1000+</div>
+                                <div class="text-xs text-gray-500">Events</div>
+                            </div>
+                            <div class="text-center px-4">
+                                <div class="text-xl font-bold text-gold-600">5★</div>
+                                <div class="text-xs text-gray-500">Rated</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-luxury-dark text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold-400 font-semibold tracking-widest uppercase text-sm">Our Services</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4 font-serif">
+                    Premium <span class="text-gradient-gold">Catering</span> Solutions
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">From intimate family gatherings to grand wedding celebrations, we offer comprehensive catering services tailored to your needs.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wedding Food -->
+                <div class="service-card rounded-2xl overflow-hidden hover-lift group" data-aos="fade-up" data-aos-delay="0">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1TPjl2h8CiovFit_mnTFiPEQYsW7bN-JEQ&s" alt="Wedding Food" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="text-xs bg-gold-500 text-luxury-black px-2 py-1 rounded font-semibold">Popular</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Wedding Food</h3>
+                        <p class="text-gray-600 text-sm mb-4">Traditional South Indian wedding feast served on banana leaves with 20+ authentic dishes.</p>
+                        <button onclick="openModal('wedding')" class="w-full py-3 border-2 border-gold-500 text-gold-600 rounded-lg font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Seafoods -->
+                <div class="service-card rounded-2xl overflow-hidden hover-lift group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/phfvfjnkx4rpgx9kkpwm.jpg" alt="Seafood Buffet" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Seafoods</h3>
+                        <p class="text-gray-600 text-sm mb-4">Fresh coastal Karnataka seafood specialties including kane fry, prawns, and surmai curry.</p>
+                        <button onclick="openModal('seafood')" class="w-full py-3 border-2 border-gold-500 text-gold-600 rounded-lg font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Corporate functions -->
+                <div class="service-card rounded-2xl overflow-hidden hover-lift group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://kimi-web-img.moonshot.cn/img/indianchimnee.com/7b7a383457254865c8b94ed9c9851079dd898dee.jpg" alt="Corporate Lunch" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Corporate functions</h3>
+                        <p class="text-gray-600 text-sm mb-4">Professional catering for offices, meetings, and corporate events with timely service.</p>
+                        <button onclick="openModal('corporate')" class="w-full py-3 border-2 border-gold-500 text-gold-600 rounded-lg font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Family Functions -->
+                <div class="service-card rounded-2xl overflow-hidden hover-lift group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600" alt="Family Function" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Family Functions</h3>
+                        <p class="text-gray-600 text-sm mb-4">Birthdays, anniversaries, housewarmings, and all family celebrations with customized menus.</p>
+                        <button onclick="openModal('family')" class="w-full py-3 border-2 border-gold-500 text-gold-600 rounded-lg font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Birthday Parties -->
+                <div class="service-card rounded-2xl overflow-hidden hover-lift group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://www.amantrancaterers.com/Amantran-images/reception.jpeg" alt="Birthday Party" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Birthday Party</h3>
+                        <p class="text-gray-600 text-sm mb-4">Fresh coastal Karnataka Birthday seafood specialties including kane fry, biriyani, kabab ,etc</p>
+                        <button onclick="openModal('birthday')" class="w-full py-3 border-2 border-gold-500 text-gold-600 rounded-lg font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Packed Meals -->
+                <div class="service-card rounded-2xl overflow-hidden hover-lift group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://thekkoornalabagam.com/assets/img/services/nonveg.jpeg" alt="Packed Meals" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Packed Meals</h3>
+                        <p class="text-gray-600 text-sm mb-4">Hygienic packed lunch and dinner boxes for travelers, events, and daily corporate needs.</p>
+                        <button onclick="openModal('packed')" class="w-full py-3 border-2 border-gold-500 text-gold-600 rounded-lg font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-gradient-to-b from-white to-gold-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold-600 font-semibold tracking-widest uppercase text-sm">Why Choose Us</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-luxury-black mt-3 mb-4 font-serif">
+                    The Nithyadhar <span class="text-gradient-gold">Difference</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center">
+                        <i class="fas fa-award text-luxury-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">High-Quality Food</h3>
+                    <p class="text-gray-600 text-sm">We use only fresh, premium ingredients sourced daily from local markets to ensure authentic taste.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center">
+                        <i class="fas fa-user-tie text-luxury-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Experienced Chefs</h3>
+                    <p class="text-gray-600 text-sm">Our culinary team brings decades of combined experience in traditional coastal Karnataka cuisine.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center">
+                        <i class="fas fa-clipboard-list text-luxury-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Custom Menus</h3>
+                    <p class="text-gray-600 text-sm">Every event is unique. We customize our offerings to match your preferences and dietary requirements.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center">
+                        <i class="fas fa-clock text-luxury-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Timely Service</h3>
+                    <p class="text-gray-600 text-sm">Punctuality is our promise. We ensure your food is ready and served exactly when planned.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-luxury-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Hygienic Preparation</h3>
+                    <p class="text-gray-600 text-sm">ISO-standard kitchen practices with FSSAI certification. Your health is our top priority.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center">
+                        <i class="fas fa-heart text-luxury-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-luxury-black mb-2 font-serif">Trusted Local Brand</h3>
+                    <p class="text-gray-600 text-sm">Loved by Kundapura and Udupi residents for over 15 years. Your neighbors trust us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding bg-luxury-black text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold-400 font-semibold tracking-widest uppercase text-sm">Portfolio</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4 font-serif">
+                    Our <span class="text-gradient-gold">Gallery</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Glimpses of our catering excellence at weddings, events, and celebrations.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="https://content.jdmagicbox.com/comp/coimbatore/k6/0422px422.x422.101001104546.z6k6/catalogue/famous-cook-catering-services-gandhipuram-coimbatore-coimbatore-caterers-13rfhz5.jpg" alt="Traditional Food" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="https://api-img.eventplanet.in/upload/india-catering-services-market-o.jpg" alt="birthday Festival Food" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://kimi-web-img.moonshot.cn/img/soulchef.in/a8ca4d4b1bf9afe0506dccbe2feffdfed20ea2ab.webp" alt="Corporate Catering" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="https://c8.alamy.com/comp/B5PM15/the-wedding-reception-hall-dining-tables-all-set-for-the-party-to-B5PM15.jpg" alt="Banana Leaf Feast" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://cdn0.weddingwire.in/vendor/2008/3_2/960/jpg/13227035-495768927287706-2562816958824235042-n_15_102008.jpeg" alt="Buffet Setup" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="https://svvkalyanamandapam.com/images/home-facilities-02.jpg" alt="Wedding Catering" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://saimarriagecatering.com/wp-content/uploads/2025/10/a-vibrant-wedding-buffet-setup-with-beautifully-ar.png" alt="Event Setup" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl cursor-pointer" onclick="openLightbox(this)" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="https://pub-95ccf2d427eb4955a7de1c41d3fa57dd.r2.dev/blog-g3fashion-com/2021/04/Wedding-CATERERS-in-surat-scaled.jpg" alt="Restaurant Style" class="w-full h-64 object-cover rounded-xl">
+                    <div class="gallery-overlay rounded-xl">
+                        <span class="text-white font-semibold"><i class="fas fa-search-plus mr-2"></i>View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold-600 font-semibold tracking-widest uppercase text-sm">Testimonials</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-luxury-black mt-3 mb-4 font-serif">
+                    What Our <span class="text-gradient-gold">Clients</span> Say
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-xl shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex text-gold-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The food was absolutely amazing and all our wedding guests loved it! The Food was authentic and the service was impeccable. Highly recommended!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center">
+                            <span class="text-gold-600 font-bold">RK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-luxury-black">Ramesh Kotian</h4>
+                            <p class="text-sm text-gray-500">Wedding Client, Kundapura</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-xl shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-gold-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Best catering service in Kundapura! We hired them for our corporate annual day and the seafood buffet was the highlight of the evening."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center">
+                            <span class="text-gold-600 font-bold">SP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-luxury-black">Suresh Achar</h4>
+                            <p class="text-sm text-gray-500">Corporate Client, Udupi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-xl shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex text-gold-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Professional, punctual, and perfect food quality. They handled our birthday festival feeding for 500+ people flawlessly. Will definitely hire again!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center">
+                            <span class="text-gold-600 font-bold">LH</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-luxury-black">Anu shetty</h4>
+                            <p class="text-sm text-gray-500">birthday client, nerlkatte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section id="contact" class="section-padding bg-gradient-to-b from-gold-50 to-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-gold-600 font-semibold tracking-widest uppercase text-sm">Get In Touch</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-luxury-black mt-3 mb-4 font-serif">
+                    Send Us An <span class="text-gradient-gold">Enquiry</span>
+                </h2>
+                <p class="text-gray-600">Fill out the form below and we'll get back to you within 12 hours.</p>
+            </div>
+            
+            <form action="https://formspree.io/f/xeevobqj" method="POST" class="glass-card p-8 md:p-12 rounded-3xl shadow-2xl" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-gold-500 transition-colors" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-gold-500 transition-colors" placeholder="+91 98765 43210">
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Address / Location</label>
+                    <input type="text" name="address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-gold-500 transition-colors" placeholder="Your address or event location">
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Event Type</label>
+                    <select name="event_type" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-gold-500 transition-colors">
+                        <option value="">Select Event Type</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate Event</option>
+                        <option value="birthday">Birthday / Anniversary</option>
+                        <option value="birthday">birthday Function</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Your Message *</label>
+                    <textarea name="message" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-gold-500 transition-colors resize-none" placeholder="Tell us about your event, expected guests, preferred menu, etc."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full btn-primary py-4 rounded-lg text-luxury-black font-bold text-lg flex items-center justify-center gap-2">
+                    <span>Send Enquiry</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                
+                <p class="text-center text-sm text-gray-500 mt-4">
+                    <i class="fas fa-lock mr-1"></i> Your information is secure and will never be shared.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section-padding bg-luxury-dark text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gold-400 font-semibold tracking-widest uppercase text-sm">Contact Us</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-6 font-serif">
+                        Visit Our <span class="text-gradient-gold">Kitchen</span>
+                    </h2>
+                    <p class="text-gray-400 mb-8">We're located in the heart of Kundapura, ready to serve you 24 hours a day, 7 days a week.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-gold-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Address</h4>
+                                <p class="text-gray-400">Kundapura, Udupi District<br>Karnataka, India - 576201</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone-alt text-gold-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Phone</h4>
+                                <a href="tel:+919448409823" class="text-gray-400 hover:text-gold-400 transition-colors text-2xl font-bold">+91 94484 09823</a>
+                                <p class="text-sm text-gold-500 mt-1">Click to call now</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-gold-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Business Hours</h4>
+                                <p class="text-gray-400">Open 24 Hours<br><span class="text-gold-400">No Holidays - Always Available</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-instagram text-gold-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Instagram</h4>
+                                <a href="https://www.instagram.com/accounts/login/?next=%2Fnithyadharcaterers%2F&source=omni_redirect" target="_blank" class="text-gray-400 hover:text-gold-400 transition-colors">@nithyadharcaterers</a>
+                                <p class="text-sm text-gold-500 mt-1">Follow us for updates</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 flex gap-4">
+                        <a href="https://formspree.io/f/xeevobqj" class="btn-primary px-8 py-3 rounded-full text-luxury-black font-semibold">
+                            Send Message
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/?next=%2Fnithyadharcaterers%2F&source=omni_redirect" target="_blank" class="px-8 py-3 rounded-full border border-gold-500 text-gold-400 font-semibold hover:bg-gold-500 hover:text-luxury-black transition-all flex items-center gap-2">
+                            <i class="fab fa-instagram"></i>
+                            Follow Us
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="map-container h-96 lg:h-[500px]" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15523.456789012345!2d74.6899!3d13.5330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc8d0000000000%3A0x0!2sKundapura%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-2xl">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-black border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center">
+                            <i class="fas fa-utensils text-luxury-black"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white font-serif">Nithyadhar Caterers</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4 max-w-md">
+                        Premium catering services in Kundapura, Udupi. Specializing in wedding Foods, Seafoods, Corporate functions, and traditional birthday events. Quality food, hygienic preparation, 24/7 service.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/accounts/login/?next=%2Fnithyadharcaterers%2F&source=omni_redirect" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919448409823" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white transition-all">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+919448409823" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-gold-500 hover:text-luxury-black transition-all">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-gray-400 hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-gold-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold-400 transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-gold-400 transition-colors">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-gold-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="text-gray-400 hover:text-gold-400 transition-colors">Wedding food</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold-400 transition-colors">Seafoods</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold-400 transition-colors">Corporate functions</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold-400 transition-colors">birthday Events</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold-400 transition-colors">Packed Meals</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">© 2024 Nithyadhar Caterers. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Made with <i class="fas fa-heart text-red-500"></i> in Kundapura, Karnataka</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919448409823?text=Hi,%20I%20want%20to%20enquire%20about%20catering%20services" target="_blank" class="whatsapp-float bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Service Modals -->
+    <div id="modal-wedding" class="modal items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative animate-[fadeIn_0.3s_ease]">
+            <button onclick="closeModal('wedding')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                <i class="fas fa-times text-gray-600"></i>
+            </button>
+            <div class="p-8">
+                <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mb-4">
+                    <i class="fas fa-ring text-gold-600 text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-luxury-black mb-4 font-serif">Wedding Food</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Our traditional wedding Food is a grand feast served on fresh banana leaves, featuring over 20 authentic South Indian dishes prepared with pure ghee and fresh ingredients.</p>
+                    
+                    <div class="bg-gold-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2">Menu Includes:</h4>
+                        <ul class="grid grid-cols-2 gap-2 text-sm">
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>biriyani</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>curry,kurma</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>rice,samber</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Mango Pickle</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Thoran (Vegetable Stir-fry)</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>fish dishes</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>mali samber</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Sambar & Rasam</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>soda,water</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Payasam (Dessert)</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>ice cream</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-users text-gold-500 mr-2"></i>Staff Support</h4>
+                            <p class="text-sm">Complete serving staff including leaf layers, servers, and supervisors based on guest count.</p>
+                        </div>
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-truck text-gold-500 mr-2"></i>Delivery</h4>
+                            <p class="text-sm">Available across Udupi district. Transport charges based on distance.</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm"><strong>Hygiene:</strong> All food prepared in FSSAI-certified kitchen with utmost hygiene standards.</p>
+                </div>
+                <a href="https://formspree.io/f/xeevobqj" class="block w-full btn-primary py-3 rounded-lg text-center text-luxury-black font-bold mt-6">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-seafood" class="modal items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeModal('seafood')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                <i class="fas fa-times text-gray-600"></i>
+            </button>
+            <div class="p-8">
+                <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mb-4">
+                    <i class="fas fa-fish text-gold-600 text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-luxury-black mb-4 font-serif">Seafoods</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Authentic coastal Karnataka seafood specialties featuring the freshest catch from the Arabian Sea, prepared in traditional Udupi style.</p>
+                    
+                    <div class="bg-gold-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2">Specialties:</h4>
+                        <ul class="grid grid-cols-2 gap-2 text-sm">
+                            <li><i class="fas fa-fish text-gold-500 mr-2"></i>Kane Rava Fry</li>
+                            <li><i class="fas fa-fish text-gold-500 mr-2"></i>Prawn Masala</li>
+                            <li><i class="fas fa-fish text-gold-500 mr-2"></i>Surmai Curry</li>
+                            <li><i class="fas fa-fish text-gold-500 mr-2"></i>Bangda Fry</li>
+                            <li><i class="fas fa-fish text-gold-500 mr-2"></i>Crab Sukka</li>
+                            <li><i class="fas fa-fish text-gold-500 mr-2"></i>Oysters & Clams, etc</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-leaf text-gold-500 mr-2"></i>Freshness Guarantee</h4>
+                            <p class="text-sm">Daily fresh catch sourced directly from Kundapura fishing harbor.</p>
+                        </div>
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-utensils text-gold-500 mr-2"></i>Buffet Setup</h4>
+                            <p class="text-sm">Elegant chafing dishes, live counters available on request.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://formspree.io/f/xeevobqj" class="block w-full btn-primary py-3 rounded-lg text-center text-luxury-black font-bold mt-6">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-corporate" class="modal items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeModal('corporate')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                <i class="fas fa-times text-gray-600"></i>
+            </button>
+            <div class="p-8">
+                <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mb-4">
+                    <i class="fas fa-briefcase text-gold-600 text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-luxury-black mb-4 font-serif">Corporate functions</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Professional catering solutions for offices, meetings, conferences, and corporate events with emphasis on punctuality and presentation.</p>
+                    
+                    <div class="bg-gold-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2">Options Available:</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Executive Thali:</strong> North Indian or South Indian meals</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Buffet Setup:</strong> Multi-cuisine spread with live stations</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Box Lunches:</strong> Individual packed meals for meetings</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>chicken sanaks:</strong> Evening snacks and tea/coffee service</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-clock text-gold-500 mr-2"></i>Timely Delivery</h4>
+                            <p class="text-sm">Guaranteed on-time delivery for all corporate contracts.</p>
+                        </div>
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-file-invoice text-gold-500 mr-2"></i>Billing</h4>
+                            <p class="text-sm">GST-compliant invoices provided. Monthly billing available.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://formspree.io/f/xeevobqj" class="block w-full btn-primary py-3 rounded-lg text-center text-luxury-black font-bold mt-6">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-family" class="modal items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeModal('family')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                <i class="fas fa-times text-gray-600"></i>
+            </button>
+            <div class="p-8">
+                <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mb-4">
+                    <i class="fas fa-home text-gold-600 text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-luxury-black mb-4 font-serif">Family Functions</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Make your family celebrations memorable with our customized catering for birthdays, anniversaries, housewarmings, and reunions.</p>
+                    
+                    <div class="bg-gold-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2">Perfect For:</h4>
+                        <ul class="grid grid-cols-2 gap-2 text-sm">
+                            <li><i class="fas fa-birthday-cake text-gold-500 mr-2"></i>Birthday Parties</li>
+                            <li><i class="fas fa-heart text-gold-500 mr-2"></i>Anniversaries</li>
+                            <li><i class="fas fa-home text-gold-500 mr-2"></i>Housewarmings</li>
+                            <li><i class="fas fa-users text-gold-500 mr-2"></i>Family Reunions</li>
+                            <li><i class="fas fa-baby text-gold-500 mr-2"></i>Naming Ceremonies</li>
+                            <li><i class="fas fa-graduation-cap text-gold-500 mr-2"></i>Graduation Parties</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Customizable menus to suit your family preferences. Vegetarian and non-vegetarian options available. Flexible serving styles from buffet to sit-down meals.</p>
+                </div>
+                <a href="https://formspree.io/f/xeevobqj" class="block w-full btn-primary py-3 rounded-lg text-center text-luxury-black font-bold mt-6">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-birthday" class="modal items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeModal('birthday')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                <i class="fas fa-times text-gray-600"></i>
+            </button>
+            <div class="p-8">
+                <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mb-4">
+                    <i class="fas fa-om text-gold-600 text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-luxury-black mb-4 font-serif">birthday Events</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Traditional prasadam and feast catering for birthday festivals, annadhanams, pujas, and religious gatherings with utmost devotion and cleanliness.</p>
+                    
+                    <div class="bg-gold-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2">Services:</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>biriyani</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>chicken or mutton curry</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>kabab</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>dosa,idli</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>fry,samber</li> 
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>.etc</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-praying-hands text-gold-500 mr-2"></i>Special Arrangements</h4>
+                        <p class="text-sm">We understand the sanctity of religious events. Our staff follows traditional protocols and maintains highest standards of purity during preparation and serving.</p>
+                    </div>
+                </div>
+                <a href="https://formspree.io/f/xeevobqj" class="block w-full btn-primary py-3 rounded-lg text-center text-luxury-black font-bold mt-6">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-packed" class="modal items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button onclick="closeModal('packed')" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                <i class="fas fa-times text-gray-600"></i>
+            </button>
+            <div class="p-8">
+                <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mb-4">
+                    <i class="fas fa-box text-gold-600 text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-luxury-black mb-4 font-serif">Packed Meals</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Hygienically packed meals perfect for travelers, daily office lunch, events, and bulk orders. Delivered fresh and hot.</p>
+                    
+                    <div class="bg-gold-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-luxury-black mb-2">Meal Options:</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Veg Thali:</strong> Rice, dal, 2 sabzi, chapati, pickle, sweet</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Non-Veg Thali:</strong> Rice, chicken/fish curry, chapati, salad</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Breakfast Box:</strong> Idli,dosa,roti,etc</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i><strong>Custom Orders:</strong> Tailored to your requirements</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-shield-alt text-gold-500 mr-2"></i>Packaging</h4>
+                            <p class="text-sm">Food-grade, leak-proof containers. Eco-friendly options available.</p>
+                        </div>
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-luxury-black mb-2"><i class="fas fa-truck text-gold-500 mr-2"></i>Delivery</h4>
+                            <p class="text-sm">Bulk orders delivered across Udupi district. Minimum order 20 boxes.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://formspree.io/f/xeevobqj" class="block w-full btn-primary py-3 rounded-lg text-center text-luxury-black font-bold mt-6">Book This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox items-center justify-center p-4" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-4xl hover:text-gold-400 transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Gallery Image" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS Animation
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+        
+        // Sticky Navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Modal Functions
+        function openModal(service) {
+            document.getElementById(`modal-${service}`).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(service) {
+            document.getElementById(`modal-${service}`).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal on outside click
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        
+        // Lightbox Functions
+        function openLightbox(element) {
+            const img = element.querySelector('img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal.active').forEach(modal => {
+                    modal.classList.remove('active');
+                });
+                closeLightbox();
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Form submission feedback
+        document.querySelector('form').addEventListener('submit', function() {
+            const btn = this.querySelector('button[type="submit"]');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+        });
+    </script>
+</body>
+</html>
