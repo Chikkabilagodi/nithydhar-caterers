@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithyadhar Caterers | Premium Catering Services in Kundapura, Udupi</title>
+    <meta name="description" content="Best Caterers in Kundapura. Premium wedding catering, corporate lunches, and event catering services in Udupi, Karnataka. Non-veg specialists with 24/7 service.">
+    <meta name="keywords" content="Best Caterers in Kundapura, Udupi Catering Services, Wedding Catering Kundapura, Non Veg Catering Karnataka, Event Catering Udupi">
+    <meta name="author" content="Nithyadhar Caterers">
+    <meta property="og:title" content="Nithyadhar Caterers | Premium Catering Services">
+    <meta property="og:description" content="Luxury catering experience in Kundapura, Udupi. Wedding Function, Corporate Events, Family Functions & more.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F4E4BC;
+            --gold-dark: #B8941F;
+            --black: #0A0A0A;
+            --black-soft: #1A1A1A;
+            --white: #FFFFFF;
+            --white-soft: #FAFAFA;
+            --gray-light: #F5F5F5;
+            --gray-medium: #888888;
+            --shadow-soft: 0 10px 40px rgba(0,0,0,0.08);
+            --shadow-gold: 0 4px 20px rgba(212,175,55,0.3);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--white-soft);
+            color: var(--black-soft);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--white-soft);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-primary);
+            border-radius: 4px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition-smooth);
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-soft);
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-gold);
+        }
+
+        .logo-icon i {
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        .navbar.scrolled .logo-text {
+            color: var(--black);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+
+        .navbar.scrolled .nav-links a {
+            color: var(--black-soft);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .navbar.scrolled .mobile-menu-btn {
+            color: var(--black);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1555244162-803834f70033?w=1920&q=80') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212,175,55,0.2);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-light);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: var(--white);
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 span {
+            color: var(--gold-primary);
+            font-style: italic;
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            color: var(--gray-light);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: var(--white);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            animation: bounce 2s infinite;
+        }
+
+        /* Section Common Styles */
+        section {
+            padding: 6rem 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-subtitle {
+            color: var(--gold-primary);
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--black);
+            margin-bottom: 1rem;
+        }
+
+        .section-line {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-dark));
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content p {
+            color: var(--gray-medium);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .about-feature i {
+            width: 50px;
+            height: 50px;
+            background: var(--gold-light);
+            color: var(--gold-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .about-feature span {
+            font-weight: 600;
+            color: var(--black-soft);
+        }
+
+        /* Owner Profile Card */
+        .owner-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .owner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-dark));
+        }
+
+        .owner-image-wrapper {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .owner-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--gold-primary);
+            box-shadow: 0 0 30px rgba(212,175,55,0.3);
+            transition: var(--transition-smooth);
+        }
+
+        .owner-card:hover .owner-image {
+            transform: scale(1.05);
+            box-shadow: 0 0 50px rgba(212,175,55,0.5);
+        }
+
+        
+        .owner-name {
+            font-size: 1.75rem;
+            color: var(--black);
+            margin-bottom: 0.25rem;
+        }
+
+        .owner-role {
+            color: var(--gold-primary);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .owner-desc {
+            color: var(--gray-medium);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(180deg, var(--white-soft) 0%, var(--white) 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gray-light));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.1);
+        }
+
+        .service-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-gold);
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--black);
+        }
+
+        .service-desc {
+            color: var(--gray-medium);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-btn {
+            background: transparent;
+            border: 2px solid var(--gold-primary);
+            color: var(--gold-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-btn:hover {
+            background: var(--gold-primary);
+            color: var(--white);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: 20px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlide 0.4s ease-out;
+        }
+
+        @keyframes modalSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: var(--white);
+            padding: 2rem;
+            position: relative;
+        }
+
+        .modal-title {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: var(--transition-smooth);
+        }
+
+        .modal-close:hover {
+            background: var(--white);
+            color: var(--gold-dark);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-details {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .detail-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .detail-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gold-light);
+            color: var(--gold-dark);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .detail-content h4 {
+            color: var(--black);
+            margin-bottom: 0.25rem;
+            font-size: 1.1rem;
+        }
+
+        .detail-content p {
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: var(--black-soft);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%);
+        }
+
+        .why-us .section-title {
+            color: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,175,55,0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .why-card:hover {
+            background: rgba(212,175,55,0.1);
+            transform: translateY(-5px);
+            border-color: var(--gold-primary);
+        }
+
+        .why-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--white);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .why-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+            color: var(--gold-light);
+        }
+
+        .why-card p {
+            color: var(--gray-medium);
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-title {
+            color: var(--white);
+            font-size: 1.25rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 3000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--black);
+            transition: var(--transition-smooth);
+        }
+
+        .lightbox-close:hover {
+            background: var(--gold-primary);
+            color: var(--white);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(180deg, var(--white) 0%, var(--white-soft) 100%);
+        }
+
+        .testimonials-slider {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 2rem;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .testimonials-slider::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .testimonials-slider::-webkit-scrollbar-thumb {
+            background: var(--gold-primary);
+            border-radius: 3px;
+        }
+
+        .testimonial-card {
+            flex: 0 0 400px;
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            scroll-snap-align: start;
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .testimonial-stars {
+            color: var(--gold-primary);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: var(--gray-medium);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .testimonial-info h4 {
+            color: var(--black);
+            font-size: 1.1rem;
+        }
+
+        .testimonial-info p {
+            color: var(--gold-primary);
+            font-size: 0.85rem;
+        }
+
+        /* Enquiry Form */
+        .enquiry {
+            background: var(--black-soft);
+            position: relative;
+        }
+
+        .enquiry::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .enquiry .section-title {
+            color: var(--white);
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,175,55,0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            color: var(--gold-light);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 1rem 1.25rem;
+            border: 1px solid rgba(212,175,55,0.3);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            transition: var(--transition-smooth);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--gray-medium);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.25rem;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--white-soft);
+            border-radius: 15px;
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .contact-card:hover {
+            background: var(--white);
+            box-shadow: var(--shadow-soft);
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            color: var(--black);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: var(--gray-medium);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .contact-details a:hover {
+            color: var(--gold-primary);
+        }
+
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .business-hours {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .business-hours h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .business-hours p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Instagram Section */
+        .instagram {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .instagram-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .instagram-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .instagram h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .instagram p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .instagram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--white);
+            color: #E1306C;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .instagram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-logo-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--gray-medium);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.6);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            background: var(--black);
+            color: var(--white);
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 2fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 3rem;
+                gap: 2rem;
+                transition: var(--transition-smooth);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                color: var(--black) !important;
+                font-size: 1.1rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 2fr;
+            }
+
+            .service-image {
+                height: 180px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                aspect-ratio: 16/9;
+            }
+
+            .testimonial-card {
+                flex: 0 0 90vw;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 3rem 0;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 1.5rem;
+            }
+
+            .owner-card {
+                padding: 1.5rem;
+            }
+
+            .owner-image-wrapper {
+                width: 120px;
+                height: 120px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .service-image {
+                height: 150px;
+            }
+
+            .service-card {
+                border-radius: 15px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .gallery-item {
+                aspect-ratio: 16/10;
+            }
+
+            .testimonials-slider {
+                gap: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .testimonial-card {
+                flex: 0 0 100vw;
+                padding: 1.5rem;
+                margin: 0 auto;
+                max-width: 95vw;
+                border-radius: 15px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .map-container {
+                min-height: 300px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 3rem 0 !important;
+            }
+
+            .section-header {
+                margin-bottom: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+
+            .whatsapp-tooltip {
+                right: 60px;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 0.75rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .service-card {
+                padding: 0;
+            }
+
+            .service-content {
+                padding: 1rem;
+            }
+
+            .service-title {
+                font-size: 1.25rem;
+            }
+
+            .service-desc {
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+            }
+
+            .btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.85rem;
+            }
+
+            .testimonial-card {
+                flex: 0 0 calc(100vw - 2rem);
+                padding: 1rem;
+            }
+
+            .testimonial-text {
+                font-size: 0.9rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span class="logo-text">Nithyadhar Caterers</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">Premium Catering Since 2010</div>
+            <h1>Crafting <span>Memorable</span> Culinary Experiences</h1>
+            <p class="hero-tagline">Luxury catering services for weddings, corporate events & special occasions in Kundapura & Udupi</p>
+            <div class="hero-buttons">
+                <a href="#enquiry" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Enquire Now
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-utensils"></i> View Services
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">About Us</p>
+                <h2 class="section-title">Excellence in Every Bite</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <p>Welcome to Nithyadhar Caterers, Kundapura's premier catering service dedicated to transforming your special occasions into unforgettable culinary experiences. With over a decade of expertise in coastal Karnataka cuisine, we specialize in delivering authentic flavors with a touch of luxury.</p>
+                    <p>Our commitment to quality begins with hand-picked fresh ingredients sourced from local markets, prepared by our team of experienced chefs who understand the nuances of traditional and contemporary cooking. Whether it's an intimate family gathering or a grand wedding celebration, we bring the same passion and precision to every plate we serve.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-award"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Hygienic</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Service</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-users"></i>
+                            <span>Expert Team</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Owner Profile Card -->
+                <div class="owner-card fade-in">
+                    <div class="owner-image-wrapper">
+                        <img src="https://www.image2url.com/r2/default/images/1776505578269-8eb208d3-30fc-4f53-bd77-37ab8152e9d8.jpeg" alt="Owner Image" class="owner-image">
+                        <div class="owner-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="owner-name">Walter 
+                    <p class="owner-role">Founder & Head Caterer</p>
+                    <p class="owner-desc">With 15+ years of culinary expertise in coastal Karnataka cuisine, Nithyananda founded Nithyadhar Caterers with a vision to bring authentic, hygienic, and premium catering services to every celebration in Kundapura and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Our Services</p>
+                <h2 class="section-title">Culinary Solutions for Every Occasion</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://destinationweddingbharat.com/wp-content/uploads/2026/01/non-veg-food-menu-for-marriage.webp" alt="Wedding Function">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-ring"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Wedding Function</h3>
+                        <p class="service-desc">Traditional multi-course feast served on banana leaves, featuring authentic coastal Karnataka flavors for your special day.</p>
+                        <button class="service-btn" onclick="openModal('wedding')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2024/10/458708834/FH/SD/NX/143617138/product-jpeg-500x500.jpg" alt="Reception Functions">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Reception Functions</h3>
+                        <p class="service-desc">Elegant buffet setups and plated dinners designed to impress your guests with sophistication and taste.</p>
+                        <button class="service-btn" onclick="openModal('reception')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2025/7/523519097/DC/KG/CV/20606432/non-veg-corporate-meals-500x500.jpg" alt="Corporate Lunches">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Corporate Lunches</h3>
+                        <p class="service-desc">Professional catering solutions for business meetings, conferences, and corporate events with timely service.</p>
+                        <button class="service-btn" onclick="openModal('corporate')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&h=400&fit=crop" alt="Family Functions">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Family Functions</h3>
+                        <p class="service-desc">Intimate catering for housewarming ceremonies, anniversaries, and family gatherings with personalized menus.</p>
+                        <button class="service-btn" onclick="openModal('family')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://www.amantrancaterers.com/Amantran-images/reception.jpeg" alt="Birthday Parties">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Birthday Parties</h3>
+                        <p class="service-desc">Fun and flavorful catering for birthday celebrations of all ages, from kids' parties to milestone birthdays.</p>
+                        <button class="service-btn" onclick="openModal('birthday')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://thekkoornalabagam.com/assets/img/services/nonveg.jpeg" alt="Packed Meals">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Packed Meals</h3>
+                        <p class="service-desc">Convenient and hygienic packed meal solutions for events, travel groups, and institutional requirements.</p>
+                        <button class="service-btn" onclick="openModal('packed')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Service Details</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Why Choose Us</p>
+                <h2 class="section-title">The Nithyadhar Advantage</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>High-Quality Food</h3>
+                    <p>We use only the freshest ingredients sourced daily from local markets, ensuring every dish meets our premium standards.</p>
+                </div>
+
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Experienced Chefs</h3>
+                    <p>Our culinary team brings decades of combined experience in traditional coastal Karnataka and modern cuisine.</p>
+                </div>
+
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Custom Menus</h3>
+                    <p>Tailored menu options to suit your preferences, dietary requirements, and budget without compromising on taste.</p>
+                </div>
+
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timely Service</h3>
+                    <p>Punctuality is our priority. We ensure your food is served fresh and hot, exactly when you need it.</p>
+                </div>
+
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Hygienic Preparation</h3>
+                    <p>State-of-the-art kitchen facilities following strict FSSAI guidelines for food safety and hygiene.</p>
+                </div>
+
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Trusted Local Service</h3>
+                    <p>Over a decade of serving Kundapura and Udupi with countless happy customers and successful events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Gallery</p>
+                <h2 class="section-title">Moments We've Catered</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://content.jdmagicbox.com/comp/coimbatore/k6/0422px422.x422.101001104546.z6k6/catalogue/famous-cook-catering-services-gandhipuram-coimbatore-coimbatore-caterers-13rfhz5.jpg" alt="Royal Wedding Setup">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Royal Wedding Setup</h4>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNXx9hqdZ8kfo3SAwOIvwVq4UfdPVs5z9mYzHno=s680-w680-h510-rw" alt="Royal Wedding Setup">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Traditional Buffet</h4>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://c8.alamy.com/comp/B5PM15/the-wedding-reception-hall-dining-tables-all-set-for-the-party-to-B5PM15.jpg" alt="Royal Wedding Setup">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Live Cooking Station</h4>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://saimarriagecatering.com/wp-content/uploads/2025/10/a-vibrant-wedding-buffet-setup-with-beautifully-ar.png" alt="Royal Wedding Setup">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Premium Food Display</h4>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://cdn0.weddingwire.in/vendor/2008/3_2/960/jpg/13227035-495768927287706-2562816958824235042-n_15_102008.jpeg" alt="Royal Wedding Setup">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Coastal Karnataka Cuisine</h4>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://svvkalyanamandapam.com/images/home-facilities-02.jpg" alt="Royal Wedding Setup">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Wedding Catering</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Testimonials</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="testimonials-slider fade-in">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The food was absolutely amazing and all our wedding guests loved it! Nithyadhar Caterers made our special day even more memorable with their exceptional service and delicious coastal cuisine."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RK</div>
+                        <div class="testimonial-info">
+                            <h4>Ramesh & Kavita</h4>
+                            <p>Wedding Reception, Kundapura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best catering service in Kundapura! The team was professional, punctual, and the seafood spread was outstanding. Highly recommended for any event big or small."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SP</div>
+                        <div class="testimonial-info">
+                            <h4>Shankar Prabhu</h4>
+                            <p>Corporate Event, Udupi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We hired them for my daughter's birthday party and everything was perfect. The kids loved the snacks and the main course was delicious. Great hygiene standards too!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AM</div>
+                        <div class="testimonial-info">
+                            <h4>Anita M.</h4>
+                            <p>Birthday Party, Kundapura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The traditional sadya they prepared for our housewarming was authentic and flavorful. True coastal Karnataka taste! Will definitely book again for future events."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">NH</div>
+                        <div class="testimonial-info">
+                            <h4>Anvika shetty
+                            <p>Housewarming, Udupi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section class="enquiry" id="enquiry">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Get In Touch</p>
+                <h2 class="section-title">Request a Quote</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="form-container fade-in">
+                <form action="https://formspree.io/f/mojydoey" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-group full">
+                            <label for="address">Address / Event Location</label>
+                            <input type="text" id="address" name="address" placeholder="Enter event address" required>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your event, number of guests, preferred menu, etc." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Contact Us</p>
+                <h2 class="section-title">Visit or Call Us</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+919448409823">+91 94484 09823</a>
+                            <p>Available 24/7 for bookings</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Kundapura, Udupi District<br>Karnataka, India - 576201</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:nithyadharcaterers@gmail.com">nithyadharcaterers@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                        <p>Open 24 Hours • No Holidays</p>
+                        <p>We cater to your schedule, any day, any time!</p>
+                    </div>
+                </div>
+
+                <div class="map-container fade-in">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62111.85974333254!2d74.6756!3d13.6339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc9b4e4c1e3f6b%3A0x4e5f5e5e5e5e5e5e!2sKundapura%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <div class="container">
+            <div class="instagram-content fade-in">
+                <i class="fab fa-instagram instagram-icon"></i>
+                <h2>Follow Us on Instagram</h2>
+                <p>Stay updated with our latest events, behind-the-scenes, and mouth-watering food photography</p>
+                <a href="https://www.instagram.com/nithyadharcaterers/" target="_blank" class="instagram-btn">
+                    <i class="fab fa-instagram"></i> @nithyadharcaterers
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <span class="footer-logo-text">Nithyadhar Caterers</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nithyadhar Caterers. All rights reserved. | Premium Catering Services in Kundapura, Udupi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919448409823?text=Hi, I want to enquire about catering services" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+    </a>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Scroll animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Service Modal Data
+        const serviceData = {
+            wedding: {
+                title: 'Wedding Function',
+                details: [
+                    { icon: 'fa-utensils', title: 'Menu Types', desc: 'Traditional South Indian Sadya with 15+ items including coastal specialties like Kori Rotti, Fish Curry, and Neer Dosa' },
+                    { icon: 'fa-leaf', title: 'Packing Options', desc: 'Banana leaf service for authentic experience, disposable plates available, individual packed meals for take-away' },
+                    { icon: 'fa-users', title: 'Staff Support', desc: 'Trained service staff, professional servers, cleanup crew, and on-site supervisors for seamless execution' },
+                    { icon: 'fa-shield-alt', title: 'Hygiene & Quality', desc: 'FSSAI certified kitchen, fresh ingredients daily, temperature-controlled storage, and strict quality checks' },
+                    { icon: 'fa-truck', title: 'Delivery', desc: 'Free delivery within 25km of Kundapura, setup 2 hours before event, equipment and cutlery provided' }
+                ]
+            },
+            reception: {
+                title: 'Reception Functions',
+                details: [
+                    { icon: 'fa-utensils', title: 'Menu Types', desc: 'Buffet and plated dinner options with live counters, starters, main course, and elaborate dessert spreads' },
+                    { icon: 'fa-leaf', title: 'Packing Options', desc: 'Elegant buffet setups with chafing dishes, cocktail napkins, and premium disposable or regular crockery' },
+                    { icon: 'fa-users', title: 'Staff Support', desc: 'Uniformed waitstaff, bartenders for mocktails, live counter chefs, and event coordinators' },
+                    { icon: 'fa-shield-alt', title: 'Hygiene & Quality', desc: 'HACCP compliant preparation, sealed ingredient packaging, and real-time quality monitoring' },
+                    { icon: 'fa-truck', title: 'Delivery', desc: 'Full setup and breakdown service, equipment rental available, flexible timing for evening events' }
+                ]
+            },
+            corporate: {
+                title: 'Corporate Lunches',
+                details: [
+                    { icon: 'fa-utensils', title: 'Menu Types', desc: 'Executive thalis, continental options, working lunch boxes, and customized menus for dietary preferences' },
+                    { icon: 'fa-leaf', title: 'Packing Options', desc: 'Individual packed meals with cutlery sets, buffet setups for team lunches, or boxed lunches for meetings' },
+                    { icon: 'fa-users', title: 'Staff Support', desc: 'Professional service team, minimal disruption setup, and quick service for time-bound events' },
+                    { icon: 'fa-shield-alt', title: 'Hygiene & Quality', desc: 'Corporate-grade hygiene standards, sealed packaging, and nutritional balance in meal planning' },
+                    { icon: 'fa-truck', title: 'Delivery', desc: 'Punctual delivery guaranteed, bulk order discounts, recurring contract options available' }
+                ]
+            },
+            family: {
+                title: 'Family Functions',
+                details: [
+                    { icon: 'fa-utensils', title: 'Menu Types', desc: 'Flexible menus from simple home-style cooking to elaborate spreads for housewarmings, anniversaries, and celebrations' },
+                    { icon: 'fa-leaf', title: 'Packing Options', desc: 'Family-style serving bowls, individual portions, or traditional banana leaf service based on preference' },
+                    { icon: 'fa-users', title: 'Staff Support', desc: 'Friendly service staff, help with guest seating, and assistance throughout the event duration' },
+                    { icon: 'fa-shield-alt', title: 'Hygiene & Quality', desc: 'Home-style hygiene with professional standards, fresh preparation on event day' },
+                    { icon: 'fa-truck', title: 'Delivery', desc: 'Flexible timing, small gathering accommodation (20+ guests), and intimate venue setups' }
+                ]
+            },
+            birthday: {
+                title: 'Birthday Parties',
+                details: [
+                    { icon: 'fa-utensils', title: 'Menu Types', desc: 'Kid-friendly menus with snacks, main course, and themed cakes. Adult preferences catered with continental and Indian options' },
+                    { icon: 'fa-leaf', title: 'Packing Options', desc: 'Fun serving platters, individual party boxes for kids, and themed table setups' },
+                    { icon: 'fa-users', title: 'Staff Support', desc: 'Energetic team experienced with kids parties, quick service, and cleanup assistance' },
+                    { icon: 'fa-shield-alt', title: 'Hygiene & Quality', desc: 'Extra attention to food safety for children, allergen-free options available on request' },
+                    { icon: 'fa-truck', title: 'Delivery', desc: 'Setup at parks, halls, or homes, flexible timing for evening parties, and quick turnaround' }
+                ]
+            },
+            packed: {
+                title: 'Packed Meals',
+                details: [
+                    { icon: 'fa-utensils', title: 'Menu Types', desc: 'Standard and premium meal boxes with veg and non-veg options, customizable for dietary needs' },
+                    { icon: 'fa-leaf', title: 'Packing Options', desc: 'Microwave-safe containers, eco-friendly packaging, and insulated bags for temperature maintenance' },
+                    { icon: 'fa-users', title: 'Staff Support', desc: 'Bulk packing team, labeling service, and distribution assistance if required' },
+                    { icon: 'fa-shield-alt', title: 'Hygiene & Quality', desc: 'Sealed packaging in hygienic conditions, freshness locks, and tamper-proof containers' },
+                    { icon: 'fa-truck', title: 'Delivery', desc: 'Bulk delivery across Udupi district, transport coordination for outstation requirements, and scheduled deliveries' }
+                ]
+            }
+        };
+
+        // Modal Functions
+        function openModal(service) {
+            const modal = document.getElementById('serviceModal');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+            
+            const data = serviceData[service];
+            title.textContent = data.title;
+            
+            body.innerHTML = `
+                <div class="modal-details">
+                    ${data.details.map(detail => `
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas ${detail.icon}"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>${detail.title}</h4>
+                                <p>${detail.desc}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('serviceModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('serviceModal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                closeModal();
+            }
+        });
+
+        // Lightbox Functions
+        function openLightbox(element) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            const src = element.querySelector('img').src;
+            
+            img.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeLightbox();
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
